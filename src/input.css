@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-
+/* WAVE SECTIONS */
 .wave {
     position: absolute;
     top: 0;
@@ -12,18 +12,15 @@
     overflow: hidden;
     line-height: 0;
 }
-
 .wave svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
-
 .wave .shape-fill {
     fill: #C4B5FD;
 }
-
 .spacer {
     aspect-ratio: 960/300;
     width: 100%;
@@ -34,7 +31,6 @@
 .layer1 {
     background-image: url('images/layer1.svg');
 }
-
 .layer2 {
     background-image: url('images/layerr.svg');
 }
@@ -45,24 +41,11 @@
     background-image: url('images/foot.svg');
 }
 
+/* STRUCTURE */
 header {
     border-bottom: 2px solid #1e1b4b;
 }
-
-.headshot {
-    border-radius: 50%;
-    width: 90%;
-    /* max-width: 400px; */
-}
-img {
-    /* max-width: 400px; */
-    margin: 0 auto;
-    max-width: 400px;
-    max-height: 400px;
-}
-
 body {
-    /* background: radial-gradient(circle, rgba(233,166,195,1) 0%, rgba(205,164,231,1) 100%); */
     overflow-y: scroll;
     overflow: hidden;
 
@@ -73,6 +56,17 @@ section {
     width: 100%;
     margin: 0 auto;
     position: relative;
+}
+
+/* IMAGES */
+.headshot {
+    border-radius: 50%;
+    width: 90%;
+}
+img {
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 
@@ -86,7 +80,6 @@ section {
 
 .tab-links {
     margin-right: 40px;
-    /* font-size: 24px; */
     cursor: pointer;
     position: relative;
 }
@@ -109,7 +102,6 @@ section {
 }
 .tab-contents ul li span {
     color: #c4b5fd;
-    /* font-size: 18px; */
     font-weight: 500;
 }
 
