@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="output.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins] text-indigo-950 bg-violet-200">
+    <!-- NAVBAR -->
+    <header class="z-10 bg-white py-2 top-0 sticky outline-1">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <!-- <img class="w-16 " src="images/logo.png" alt="logo"> -->
+                <h1 class="text-2xl">Isa D.</h1>
+            </div>
+            <div
+                class="z-0 mt-10 md:m-0 nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[100%] md:w-auto w-full flex items-center px-5 hidden md:block">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-400" href="#"> Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-400" href="#"> About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-400" href="#"> Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 ">
+                <button class="button px-5 py-2">Contact</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+    <!-- HERO -->
+    <section class="bg-violet-200 z-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pl-20">
+            <div class="lg:mt-20 rounded-3xl p-0 flex flex-col gap-4 r mb-5 px-10">
+                <h1 class="text-4xl md:text-5xl">Hi! I'm Isa Dockter</h1>
+                <span class="text-xl text-indigo-800">Senior studying Informatics with an Art/Design cognate, minors in
+                    Web Dev/Design & Human-Centered Computing</span>
+                <span class="text-md">I'm passionate about both <span class="text-l text-indigo-800">Front-End Web
+                        Development & UI/UX Design</span> </span>
+                        <div>
+                        <!-- <ion-icon class="text-5xl" name="brush-outline"></ion-icon> -->
+                        <ion-icon class="text-5xl" name="logo-html5"></ion-icon>
+                        <ion-icon class="text-5xl" name="logo-css3"></ion-icon>
+                        <ion-icon class="text-5xl" name="logo-figma"></ion-icon>                        
+                        <ion-icon class="text-5xl" name="logo-javascript"></ion-icon>                       
+                        <ion-icon class="text-5xl" name="logo-python"></ion-icon>
+                    </div>
+            </div>
+            <div>
+                <img class="headshot mx-auto md:m-0 " src="images/headshot.jpeg" alt="Isa">
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div class="spacer foot flex justify-center"> <a href="#ex"> <ion-icon name="chevron-down-outline"
+                class="text-5xl pt-10 cursor-pointer hover:text-indigo-500"></ion-icon></a>
+    </div>
+    <!-- SKILLS/EXPERIENCE -->
+    <!-- <div class="spacxer layer2"></div> -->
+    <section class="bg-indigo-600 pt-20 text-indigo-100" id="ex">
+        <h2 class="md:ml-20 pl-10 md:text-4xl text-3xl">About Me</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10 mx-10">
+
+            <div>
+                <img class="mx-auto rounded-2xl" src="images/blueblop.jpg" alt="asdfasdf">
+            </div>
+            <div class="mx-auto md:m-0">
+                <!-- TABS -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link text-md md:text-2xl" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links text-md md:text-2xl" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links text-md md:text-2xl" onclick="openTab('education')">Education</p>
+                </div>
+                <!-- tab content -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span class="md:text-xl">UI/UX</span><br> Designing Web Interfaces with Figma</li>
+                        <li><span class="md:text-xl">Web Dev</span><br> HTML/CSS/JS, PHP, Bootstrap</li>
+                        <li><span class="md:text-xl">Databases/Backend</span><br>MySQL</li>
+                        <li><span class="md:text-xl">Slay</span><br> Designing Web Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span class="md:text-xl">July 2023 - Present</span><br> Cake Decorator at Kroger</li>
+                        <li><span class="md:text-xl">January 2023 - Present</span><br> Undergraduate Instructor for INFO 360:</li>
+                        <li><span class="md:text-xl">January 2023 - Present</span><br> Undergraduate Instructor for INFO 211</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="md:text-xl">August 2020 - May 2024</span><br>Indiana University Bloomington <br> Luddy School
+                            of Informatics</li>
+                        <li><span class="md:text-xl">Awards</span><br> Luddy Dean's List (FA2022, SP2023, FA2023)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer layer2"></div>
+
+    <!-- PROJECTS -->
+    <section class="bg-violet-300">
+        <h2 class="md:ml-20 pb-3 pl-8 md:text-4xl text-3xl pb-10">Projects</h2>
+        <div class="flex flex-col">
+            <!-- project 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10 md:mx-20">
+                <div class="pl-10 flex flex-col justify-between">
+                    <div>
+                    <h3 class="text-2xl">Healthy Bytes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt neque ullam cum, provident
+                        delectus porro aliquid adipisci temporibus laboriosam pariatur optio velit harum eos saepe
+                        perspiciatis odio rerum asperiores soluta.</p>
+                    </div>
+                    <div class="mb-5">
+                        View Demo
+                    </div>
+                </div>
+                <div class="m-5 md:m-0">
+                    <img class="object-contain rounded-2xl" src="images/gradient-bg.jpg" alt="background">
+
+                </div>
+            </div>
+            <!-- project 3 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10 mt-10 md:mx-20">
+                <div class="pl-10">
+                    <h3>Equipment Rental DB</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt neque ullam cum, provident
+                        delectus porro aliquid adipisci temporibus laboriosam pariatur optio velit harum eos saepe
+                        perspiciatis odio rerum asperiores soluta.</p>
+                </div>
+                <div class="m-5 md:m-0">
+                    <img class="object-contain rounded-2xl" src="images/gradient-bg.jpg" alt="background">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="spacer layer3"></div>
+
+    <section class="bg-violet-200 mb-20">
+        <!-- CONTACT -->
+        <!-- <div class="max-w-md mx-auto">
+            <h2 class="md:text-4xl text-3xl">Lets Get in Touch!</h2>
+            <form class="flex flex-col my-5" action="https://formspree.io/f/xdoqkoqy" method="POST">
+                <label class="p-2 rounded text-xl">
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label class="p-2 rounded text-xl">
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button class="button m-5" type="submit">Send</button>
+            </form>
+        </div> -->
+
+        <!-- https://flowbite.com/docs/components/forms/ -->
+
+        <form class="max-w-md mx-auto" action="https://formspree.io/f/xdoqkoqy" method="POST">
+            <h2 class="md:text-4xl text-3xl mb-5">Lets Get in Touch!</h2>
+
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                    <label for="first_name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                    <label for="last_name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                </div>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                <label for="email" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <textarea type="text" cols="3" name="message" id="message" class=" block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required></textarea>
+                <label for="message" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
+            </div>
+
+            </div>
+            <button type="submit" class="button m-2">Send</button>
+          </form>
+          
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-indigo-600 rounded-lg shadow m-4">
+        <div class="w-full mx-auto max-w-screen-xl p-4 flex justify-center">
+            <p class="text-sm text-violet-200">Made with HTML, CSS/TailWind, JS</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[35%]');
+            navLinks.classList.toggle('hidden');
+
+            console.log(navLinks);
+        }
+
+
+        // TAB LINKS for skills, experience, education
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // TAB LINKS for PROJECTS
+        var tabLinksP = document.getElementsByClassName('tab-links-proj');
+        var tabContentsP = document.getElementsByClassName('tab-contents-proj');
+
+        function openTabP(tabName) {
+            for (tabLinkP of tabLinksP) {
+                tabLinkP.classList.remove('active-link');
+            }
+            for (tabContentP of tabContentsP) {
+                tabContentP.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+    </script>
+</body>
+
+</html>
