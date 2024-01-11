@@ -33,19 +33,21 @@
             <div class="z-0 mt-10 md:m-0 nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[100%] md:w-auto w-full flex items-center px-5 hidden md:block">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a class="hover:text-gray-400" href="#"> Home</a>
+                        <a class="hover:text-gray-400" href="index.html"> Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-400" href="#"> About</a>
+                        <a class="hover:text-gray-400" href="#about"> About</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-400" href="#"> Projects</a>
+                        <a class="hover:text-gray-400" href="#projects"> Projects</a>
                     </li>
                 </ul>
             </div>
             <!-- contact button -->
             <div class="flex items-center gap-6 ">
-                <button class="button px-5 py-2">Contact</button>
+                <a href="#contact">
+                    <button class="button px-5 py-2">Contact</button>
+                </a>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
         </nav>
@@ -80,14 +82,14 @@
 
     <!-- down arrow & stacked waves-->
     <div class="spacer foot flex justify-center"> 
-        <a href="#ex"> 
+        <a href="#about"> 
             <ion-icon name="chevron-down-outline" class="text-5xl pt-10 cursor-pointer hover:text-indigo-500"></ion-icon>
         </a>
     </div>
 
     <!------------------------------------------------>
     <!-- SKILLS/EXPERIENCE -->
-    <section class="bg-indigo-600 pt-20 text-indigo-100" id="ex">
+    <section class="bg-indigo-600 pt-20 text-indigo-100" id="about">
         <h2 class="md:ml-20 pl-10 md:text-4xl text-3xl">About Me</h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10 mx-10">
             <!-- image on left -->
@@ -133,7 +135,7 @@
 
     <!------------------------------------------------>
     <!-- PROJECTS -->
-    <section class="bg-violet-300">
+    <section class="bg-violet-300" id="projects">
         <h2 class="md:ml-20 pb-3 pl-8 md:text-4xl text-3xl pb-10">Projects</h2>
         <div class="flex flex-col">
             <!-- project 1 -->
@@ -175,20 +177,16 @@
 
     <!------------------------------------------------>
     <!-- CONTACT -->
-    <section class="bg-violet-200 mb-20 md:mx-auto flex justify-center">
+    <section class="bg-violet-200 mb-20 md:mx-auto flex justify-center" id="contact">
         <!-- https://flowbite.com/docs/components/forms/ -->
-        <form class="max-w-md m-5 max-w-400" action="https://formspree.io/f/xdoqkoqy" method="POST">
+        <form name="contact-form" class="max-w-md m-5 max-w-400" action="">
             <h2 class="md:text-4xl text-3xl mb-5">Lets Get in Touch!</h2>
 
             <!-- first/last name -->
-            <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="grid md:grid-cols-1 md:gap-6">
                 <div class="relative z-0 w-full mb-5 group">
-                    <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
-                    <label for="first_name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
-                </div>
-                <div class="relative z-0 w-full mb-5 group">
-                    <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
-                    <label for="last_name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                    <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                    <label for="name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
                 </div>
             </div>
             <!-- email -->
@@ -199,7 +197,7 @@
             <!-- message -->
             <div class="relative z-0 w-full mb-5 group">
                 <textarea type="text" cols="3" name="message" id="message" class=" block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required></textarea>
-                <label for="message" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
+                <label for="message" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
             </div>
             <!-- submit button -->
             </div>
@@ -218,6 +216,22 @@
 
     <!-- JS for navbar & tabs functionality -->
     <script src="site.js"> </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxs4xZfi8K7nCrMtuGLxGze9x2eNIMB7fcA1--w2gR3h9R034e7DlN0FZ2C9CoR6wLh/exec'
+        const form = document.forms['contact-form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                form.reset()
+                alert("Success!")
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
 </body>
 
 </html>
