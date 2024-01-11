@@ -85,9 +85,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10 mx-10">
 
             <div>
-                <img class="mx-auto rounded-2xl" src="images/blueblop.jpg" alt="asdfasdf">
+                <img class="mx-auto rounded-2xl w-full max-w-400" src="images/blueblop.jpg" alt="asdfasdf">
             </div>
-            <div class="mx-auto md:m-0">
+            <div class="mx-auto md:m-0  w-full max-w-400">
                 <!-- TABS -->
                 <div class="tab-titles">
                     <p class="tab-links active-link text-md md:text-2xl" onclick="openTab('skills')">Skills</p>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <div class="m-5 md:m-0">
-                    <img class="object-contain rounded-2xl" src="images/gradient-bg.jpg" alt="background">
+                    <img class="object-contain rounded-2xl w-full max-w-400 " src="images/gradient-bg.jpg" alt="background">
 
                 </div>
             </div>
@@ -156,7 +156,7 @@
                         perspiciatis odio rerum asperiores soluta.</p>
                 </div>
                 <div class="m-5 md:m-0">
-                    <img class="object-contain rounded-2xl" src="images/gradient-bg.jpg" alt="background">
+                    <img class="object-contain rounded-2xl w-full max-w-400" src="images/gradient-bg.jpg" alt="background">
 
                 </div>
             </div>
@@ -164,7 +164,7 @@
     </section>
     <div class="spacer layer3"></div>
 
-    <section class="bg-violet-200 mb-20">
+    <section class="bg-violet-200 mb-20 md:mx-auto flex justify-center">
         <!-- CONTACT -->
         <!-- <div class="max-w-md mx-auto">
             <h2 class="md:text-4xl text-3xl">Lets Get in Touch!</h2>
@@ -183,25 +183,25 @@
 
         <!-- https://flowbite.com/docs/components/forms/ -->
 
-        <form class="max-w-md mx-auto" action="https://formspree.io/f/xdoqkoqy" method="POST">
+        <form class="max-w-md m-5 max-w-400" action="https://formspree.io/f/xdoqkoqy" method="POST">
             <h2 class="md:text-4xl text-3xl mb-5">Lets Get in Touch!</h2>
 
             <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 w-full mb-5 group">
-                    <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                    <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
                     <label for="first_name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
                 </div>
                 <div class="relative z-0 w-full mb-5 group">
-                    <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                    <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
                     <label for="last_name" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
                 </div>
             </div>
             <div class="relative z-0 w-full mb-5 group">
-                <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
+                <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required />
                 <label for="email" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
             </div>
             <div class="relative z-0 w-full mb-5 group">
-                <textarea type="text" cols="3" name="message" id="message" class=" block py-2.5 px-0 w-full text-sm text-indigo-950 bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required></textarea>
+                <textarea type="text" cols="3" name="message" id="message" class=" block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 appearance-none dark:text-white dark:focus:border-violet-500 focus:outline-none focus:ring-0 focus:border-violet-600 peer" placeholder=" " required></textarea>
                 <label for="message" class="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
             </div>
 
