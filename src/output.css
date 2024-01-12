@@ -1014,7 +1014,7 @@ video {
 }
 
 .spacer {
-  aspect-ratio: 960/300;
+  aspect-ratio: 960/275;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
