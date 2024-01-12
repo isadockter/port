@@ -57,6 +57,12 @@ section {
     margin: 0 auto;
     position: relative;
 }
+.divider {
+    border-bottom: 1px solid black;
+}
+#border-form {
+    border-color: #4338ca;
+}
 
 /* IMAGES */
 .headshot {
