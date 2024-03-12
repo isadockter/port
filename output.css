@@ -1044,8 +1044,8 @@ header {
 }
 
 img {
-  /* max-width: 400px; */
   margin: 0 auto;
+  width: 100%;
   max-width: 400px;
   max-height: 400px;
 }
@@ -1122,6 +1122,15 @@ section {
   transition: scale ease-in-out 0.3s;
 }
 .git:hover {
+  fill: #a78bfa;
+  scale: 1.1;
+}
+.linked-in svg{
+  fill: #5b21b6;
+  transition: fill ease-in-out 0.3s;
+  transition: scale ease-in-out 0.3s;
+}
+.linked-in svg:hover {
   fill: #a78bfa;
   scale: 1.1;
 }
