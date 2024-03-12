@@ -1130,6 +1130,29 @@ section {
   height: 50px;
   fill: #a78bfa;
 }
+.blob-large {
+  animation: move-up 2s infinite alternate;
+}
+/*Animations*/
+@keyframes move-up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(2rem);
+    }
+}
+
+@keyframes move-down {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-2rem);
+    }
+}
 /* BUTTONS */
 
 .button {
