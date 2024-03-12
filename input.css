@@ -164,3 +164,13 @@ img {
     max-width: 150px
 
 }
+
+/* SVG ICONS HOVER EFFECTS */
+.git:hover {
+    fill: green;
+}
+.html {
+    width: 50px;
+    height: 50px;
+    fill: blue;
+}

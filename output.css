@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: #2e1065;
   /* 2 */
 }
 
@@ -1115,8 +1115,21 @@ section {
 .tab-contents ul {
   padding: 0;
 }
-
-
+/* SVG ICONS HOVER EFFECTS */
+.git {
+  fill: #5b21b6;
+  transition: fill ease-in-out 0.3s;
+  transition: scale ease-in-out 0.3s;
+}
+.git:hover {
+  fill: #a78bfa;
+  scale: 1.1;
+}
+.html path{
+  width: 50px;
+  height: 50px;
+  fill: #a78bfa;
+}
 /* BUTTONS */
 
 .button {
@@ -1137,6 +1150,7 @@ section {
   -webkit-user-select: none;
   font-size: 18px;
   max-width: 150px;
+  white-space: nowrap;
 }
 
 .button:hover,
