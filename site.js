@@ -24,4 +24,20 @@ function openTab(tabName) {
     document.getElementById(tabName).classList.add('active-tab');
 }
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        // console.log(entry);
 
+        if (entry.isIntersecting) {
+            // console.log('yes');
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+
+        }
+    });
+});
+
+
+const hiddenElem = document.querySelectorAll('.hidden');
+hiddenElem.forEach((el) => observer.observe(el));
